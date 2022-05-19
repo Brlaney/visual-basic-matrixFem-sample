@@ -1,0 +1,147 @@
+{
+  "version": 3,
+  "targets": {
+    "net6.0": {
+      "CSparse/3.4.9": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/CSparse.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/CSparse.dll": {}
+        }
+      },
+      "BriefFiniteElement.Net/2.0.1-pre": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "BriefFiniteElementNet.Common": "2.0.0-pre",
+          "CSparse": "3.4.9"
+        },
+        "compile": {
+          "bin/placeholder/BriefFiniteElement.Net.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BriefFiniteElement.Net.dll": {}
+        }
+      },
+      "BriefFiniteElementNet.Common/2.0.0-pre": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "CSparse": "3.4.9"
+        },
+        "compile": {
+          "bin/placeholder/BriefFiniteElementNet.Common.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BriefFiniteElementNet.Common.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "CSparse/3.4.9": {
+      "sha512": "mOkU2afdIWgrY6TD32agsxK6C+5T6HIDGP9tDrCavo9aFHaa8OmdrGHnlRHQ/3t2gyNtMl8++h4Ly+js7gIpGg==",
+      "type": "package",
+      "path": "csparse/3.4.9",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "csparse.3.4.9.nupkg.sha512",
+        "csparse.nuspec",
+        "lib/net40/CSparse.dll",
+        "lib/net40/CSparse.xml",
+        "lib/net45/CSparse.dll",
+        "lib/net45/CSparse.xml",
+        "lib/netstandard2.0/CSparse.dll",
+        "lib/netstandard2.0/CSparse.xml"
+      ]
+    },
+    "BriefFiniteElement.Net/2.0.1-pre": {
+      "type": "project",
+      "path": "../../../../temp/BriefFiniteElement/BriefFiniteElementNet/BriefFiniteElementNet.csproj",
+      "msbuildProject": "../../../../temp/BriefFiniteElement/BriefFiniteElementNet/BriefFiniteElementNet.csproj"
+    },
+    "BriefFiniteElementNet.Common/2.0.0-pre": {
+      "type": "project",
+      "path": "../../../../temp/BriefFiniteElement/BriefFiniteElementNet.Common/BriefFiniteElementNet.Common.csproj",
+      "msbuildProject": "../../../../temp/BriefFiniteElement/BriefFiniteElementNet.Common/BriefFiniteElementNet.Common.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net6.0": [
+      "BriefFiniteElement.Net >= 2.0.1-pre",
+      "BriefFiniteElementNet.Common >= 2.0.0-pre"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Brlan\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\Brlan\\source\\repos\\vbMatrixFem\\vbMatrixApp\\vbMatrixApp.vbproj",
+      "projectName": "vbMatrixApp",
+      "projectPath": "C:\\Users\\Brlan\\source\\repos\\vbMatrixFem\\vbMatrixApp\\vbMatrixApp.vbproj",
+      "packagesPath": "C:\\Users\\Brlan\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Brlan\\source\\repos\\vbMatrixFem\\vbMatrixApp\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\Brlan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net6.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "projectReferences": {
+            "C:\\Users\\Brlan\\temp\\BriefFiniteElement\\BriefFiniteElementNet.Common\\BriefFiniteElementNet.Common.csproj": {
+              "projectPath": "C:\\Users\\Brlan\\temp\\BriefFiniteElement\\BriefFiniteElementNet.Common\\BriefFiniteElementNet.Common.csproj"
+            },
+            "C:\\Users\\Brlan\\temp\\BriefFiniteElement\\BriefFiniteElementNet\\BriefFiniteElementNet.csproj": {
+              "projectPath": "C:\\Users\\Brlan\\temp\\BriefFiniteElement\\BriefFiniteElementNet\\BriefFiniteElementNet.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net6.0": {
+        "targetAlias": "net6.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

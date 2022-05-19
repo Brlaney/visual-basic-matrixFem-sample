@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "c4UbfuZPVatoVflDmGwTiT5a3IkbT+r3WSd8Rh+ZJcbPivTpvXHjcE32eaIGgC2AEBDqcZwkFc0Q52zeCY0+wg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Brlan\\source\\repos\\vbMatrixFem\\vbMatrixApp\\vbMatrixApp.vbproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Brlan\\.nuget\\packages\\csparse\\3.4.9\\csparse.3.4.9.nupkg.sha512"
+  ],
+  "logs": []
+}

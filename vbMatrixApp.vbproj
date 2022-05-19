@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+	<OutputType>Exe</OutputType>
+    <RootNamespace>vbMatrixApp</RootNamespace>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\temp\BriefFiniteElement\BriefFiniteElementNet.Common\BriefFiniteElementNet.Common.csproj" />
+    <ProjectReference Include="..\..\..\..\temp\BriefFiniteElement\BriefFiniteElementNet\BriefFiniteElementNet.csproj" />
+  </ItemGroup>
+
+</Project>

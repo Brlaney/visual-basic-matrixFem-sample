@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "vbMatrixApp": {
+      "commandName": "Project",
+      "workingDirectory": "C:\\Users\\Brlan\\source\\repos\\vbMatrixFem"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "vbMatrixApp/1.0.0": {
+        "dependencies": {
+          "BriefFiniteElement.Net": "2.0.1-pre",
+          "BriefFiniteElementNet.Common": "2.0.0-pre"
+        },
+        "runtime": {
+          "vbMatrixApp.dll": {}
+        }
+      },
+      "CSparse/3.4.9": {
+        "runtime": {
+          "lib/netstandard2.0/CSparse.dll": {
+            "assemblyVersion": "3.4.9.0",
+            "fileVersion": "3.4.9.0"
+          }
+        }
+      },
+      "BriefFiniteElement.Net/2.0.1-pre": {
+        "dependencies": {
+          "BriefFiniteElementNet.Common": "2.0.0-pre",
+          "CSparse": "3.4.9"
+        },
+        "runtime": {
+          "BriefFiniteElementNet.dll": {}
+        }
+      },
+      "BriefFiniteElementNet.Common/2.0.0-pre": {
+        "dependencies": {
+          "CSparse": "3.4.9"
+        },
+        "runtime": {
+          "BriefFiniteElementNet.Common.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "vbMatrixApp/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CSparse/3.4.9": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-mOkU2afdIWgrY6TD32agsxK6C+5T6HIDGP9tDrCavo9aFHaa8OmdrGHnlRHQ/3t2gyNtMl8++h4Ly+js7gIpGg==",
+      "path": "csparse/3.4.9",
+      "hashPath": "csparse.3.4.9.nupkg.sha512"
+    },
+    "BriefFiniteElement.Net/2.0.1-pre": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "BriefFiniteElementNet.Common/2.0.0-pre": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
