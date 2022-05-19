@@ -27,7 +27,7 @@ Module Program
         Dim Load As New NodalLoad()
         Dim frc As New Force()
 
-        frc.Fz = 1000 ' 1kN force In Z direction
+        frc.Fz = 1000 '1kN force In Z direction
         Load.Force = frc
 
         n2.Loads.Add(Load)
@@ -36,13 +36,14 @@ Module Program
 
         Dim d2 = n2.GetNodalDisplacement()
 
-        Dim v11 = d2.DZ.ToString
-        Dim v12 = (d2.DZ * 1000).ToString
-        Dim v21 = d2.RY.ToString
-        Dim v22 = (d2.RY * 180.0 / Math.PI).ToString
+        Dim v11 = Math.Round(d2.DZ, 6).ToString
+        Dim v12 = Math.Round((d2.DZ * 1000), 6).ToString
+        Dim v21 = Math.Round(d2.RY, 6).ToString
+        Dim v22 = Math.Round((d2.RY * 180.0 / Math.PI), 6).ToString
 
         Dim OutputString As New Text.StringBuilder
         With OutputString
+            .AppendLine()
             .AppendLine($"The Nodal displacement in the z-axis is: {v11} m (Or: {v12} mm)")
             .AppendLine($"The Nodal rotation along the y-axis is: {v11} rad (Or: {v22} deg)")
         End With
